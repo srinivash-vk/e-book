@@ -19,7 +19,7 @@ export default function BookDetailsPage() {
                     {id &&
                         <div className='flex flex-col'>
                             <div className='flex flex-row'>
-                                <img src={SampleData[Number(id)].thumbnailUrl?.toString()} style={{
+                                <img loading="eager" src={SampleData[Number(id)].thumbnailUrl?.toString()} style={{
                                     height: "400px",
                                     width: "300px"
                                 }} />

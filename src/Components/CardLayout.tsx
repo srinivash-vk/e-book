@@ -25,8 +25,8 @@ export default function CardLayout(props: _Props) {
             <div className="md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                 <div className="rounded-lg m-h-64 p-2 transform hover:scale-105 hover:shadow-xl transition-all bg-white duration-300 cursor-pointer">
                     <figure onClick={() => { navigate(`/bookDetails/${bookId}`) }} className="mb-2">
-                        {bookImage ? <img src={bookImage} alt="" className="h-48 ml-auto mr-auto" /> 
-                        : <img src={"https://emis.sikkimedutech.in/genweb/images/no-cover-image.jpg"} alt="" className="h-48 ml-auto mr-auto" />}
+                        {bookImage ? <img loading="eager" src={bookImage} alt="" className="h-48 ml-auto mr-auto" /> 
+                        : <img loading="eager" src={"https://emis.sikkimedutech.in/genweb/images/no-cover-image.jpg"} alt="" className="h-48 ml-auto mr-auto" />}
                     </figure>
                     <div className="rounded-lg p-4 bg-EB-yellow flex flex-col">
                         <div>

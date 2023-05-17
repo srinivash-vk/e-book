@@ -23,7 +23,7 @@ export default function NavBar() {
             }}
             className="flex cursor-pointer items-center h-8 w-8"
           >
-            <img src={require("../Assets/logo.png")} alt="img" />
+            <img loading="eager" src={require("../Assets/logo.png")} alt="img" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-black pl-2">
               E-Book
             </span>
